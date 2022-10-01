@@ -4,9 +4,7 @@ const express = require("express");
 const tourRouter = require("./Routes/tourRoute");
 const userRouter = require("./Routes/userRoute");
 
-const app = express();
-
-// MIDDLEWARES
+const app = express(
 
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));

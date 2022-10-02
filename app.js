@@ -22,7 +22,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// ROUTERS
+
 app.use("/api/v1/tours", tourRouter);
 app.use("/api/v1/users", userRouter);
 
